@@ -1,9 +1,7 @@
-questo progetto è creato con chatgpt a supporto per l'architettura e la base di script
+Questo progetto esegue una RAG in locale usando Ollama e llama3, estraendo il testo da alcuni PDF, creando un DB vettoriale ed elaborando richieste con iniezione di contesto nel prompt delle domande.
 
 
 sono presenti dei testi del tutto inventati nella cartella "manuals" così da poter testare il funzionamento. I testi e le informazioni relative sono disponibili in questa chat: https://chatgpt.com/share/489c4f8f-41c9-4498-b77a-291c200518d9
-
-
 
 
 
