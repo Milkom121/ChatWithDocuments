@@ -1,6 +1,14 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from pydantic import BaseModel
+from typing import List
 from chatwithdocuments.query_llm import query_model
+from chatwithdocuments.db_manager import upload_pdf
+from chatwithdocuments.pdf_processing import extract_text_from_pdf
+import logging
+import os
+
+# Configura il logging
+logging.basicConfig(level=logging.INFO)
 
 # Modello di richiesta
 class Question(BaseModel):
@@ -19,7 +27,38 @@ def ask_question(question: Question):
     else:
         raise HTTPException(status_code=500, detail="Errore durante l'interrogazione del modello LLM.")
 
-# Configura CORS se necessario
+# Endpoint per caricare più file PDF nel database
+@app.post("/upload")
+async def upload_files(files: List[UploadFile] = File(...)):
+    uploaded_file_ids = []
+    try:
+        for file in files:
+            logging.info(f"Ricevuto file: {file.filename}")
+            # Legge il contenuto del file
+            content = await file.read()
+
+            # Salva il file temporaneamente per l'elaborazione
+            temp_file_path = f"/tmp/{file.filename}"
+            with open(temp_file_path, "wb") as temp_file:
+                temp_file.write(content)
+
+            # Estrai il testo dal file PDF
+            pdf_text = extract_text_from_pdf(temp_file_path)
+
+            # Carica il contenuto testuale nel database
+            file_id = upload_pdf(file.filename, pdf_text)
+            logging.info(f"File caricato con ID: {file_id}")
+            uploaded_file_ids.append(str(file_id))
+
+            # Rimuovi il file temporaneo
+            os.remove(temp_file_path)
+        
+        return {"file_ids": uploaded_file_ids}
+    except Exception as e:
+        logging.error(f"Errore durante il caricamento dei file: {e}")
+        raise HTTPException(status_code=500, detail="Errore durante il caricamento dei file.")
+
+# Configura CORS per permettere le richieste dal frontend
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
