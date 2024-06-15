@@ -1,0 +1,12 @@
+setup.py
+ChatWithDocuments.egg-info/PKG-INFO
+ChatWithDocuments.egg-info/SOURCES.txt
+ChatWithDocuments.egg-info/dependency_links.txt
+ChatWithDocuments.egg-info/entry_points.txt
+ChatWithDocuments.egg-info/top_level.txt
+chatwithdocuments/__init__.py
+chatwithdocuments/data_loader.py
+chatwithdocuments/embedding.py
+chatwithdocuments/pdf_processing.py
+chatwithdocuments/question_answering.py
+chatwithdocuments/utils.py
