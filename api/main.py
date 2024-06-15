@@ -26,11 +26,15 @@ app = FastAPI()
 # Endpoint per porre domande al modello LLM
 @app.post("/ask")
 def ask_question(question: Question):
+    logging.info(f"Ricevuta domanda: {question.question}")
+    
     # Interroga il modello con la domanda specificata
     result = query_model(question.question)
     if result:
+        logging.info(f"Risposta dal modello: {result}")
         return {"answer": result}
     else:
+        logging.error("Errore durante l'interrogazione del modello LLM.")
         raise HTTPException(status_code=500, detail="Errore durante l'interrogazione del modello LLM.")
 
 # Endpoint per caricare più file PDF nel database

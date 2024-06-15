@@ -123,3 +123,122 @@ AttributeError: 'str' object has no attribute 'page_content'
 2024-06-15 23:31:38,623 - root - INFO - Il modello 'llama3:latest' è disponibile.
 2024-06-15 23:31:38,625 - chromadb.api.segment - INFO - Collection langchain is not created.
 2024-06-15 23:31:44,861 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the context, the principle of functionning of the Lanternes di Ferro is not explicitly stated. However, it is mentioned that "la sicurezza intrinseca del design di Tobin previene qualsiasi danno serio" (the intrinsic security of Tobin\'s design prevents any serious damage), suggesting that the lamp\'s design has some inherent safety feature.\n\nAs for who invented the Lanterne di Ferro, it is stated that "Fexlor diventa famoso per le sue Lanterne di Ferro", implying that Fexlor is the one who created or designed the lamps.'}
+2024-06-16 00:40:51,036 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 00:40:51,037 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 00:40:51,436 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-16 00:40:51,563 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:41:37,183 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': "I don't know. The context you provided doesn't mention the principle of function or the inventor of the Lanterne di Ferro (Iron Lanterns). It only mentions that they are famous and bring prosperity to the village, but it doesn't provide any technical information about how they work."}
+2024-06-16 00:44:43,138 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 00:44:43,139 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 00:44:43,141 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:44:47,723 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the text, the principle of function for the Lanterns of Iron is not explicitly stated. However, it is mentioned that "la sicurezza intrinseca del design di Tobin previene qualsiasi danno serio", suggesting that the design itself plays a crucial role in their safety and effectiveness.'}
+2024-06-16 00:55:05,495 - root - INFO - Ricevuto file: OceaniDiAndromalia.pdf
+2024-06-16 00:55:05,553 - root - INFO - File caricato: OceaniDiAndromalia.pdf con ID: 666e1bc9667f5cc21c40b2c0
+2024-06-16 00:55:05,554 - root - INFO - Numero di documenti generati: 3
+2024-06-16 00:55:05,905 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-16 00:55:31,724 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: OceaniDiAndromalia.pdf
+2024-06-16 00:55:31,724 - root - INFO - File caricato con ID: 666e1bc9667f5cc21c40b2c0
+2024-06-16 00:55:31,725 - root - INFO - Ricevuto file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 00:55:31,741 - root - INFO - File caricato: LeLanterneDiFerroDiFLexor.pdf con ID: 666e1be3667f5cc21c40b2c1
+2024-06-16 00:55:31,742 - root - INFO - Numero di documenti generati: 3
+2024-06-16 00:55:31,748 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:55:33,082 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 00:55:33,082 - root - INFO - File caricato con ID: 666e1be3667f5cc21c40b2c1
+2024-06-16 00:55:33,083 - root - INFO - Ricevuto file: UltimoBalloDiLorian.pdf
+2024-06-16 00:55:33,102 - root - INFO - File caricato: UltimoBalloDiLorian.pdf con ID: 666e1be5667f5cc21c40b2c2
+2024-06-16 00:55:33,102 - root - INFO - Numero di documenti generati: 3
+2024-06-16 00:55:33,106 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:55:34,548 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: UltimoBalloDiLorian.pdf
+2024-06-16 00:55:34,548 - root - INFO - File caricato con ID: 666e1be5667f5cc21c40b2c2
+2024-06-16 00:55:34,549 - root - INFO - Ricevuto file: SilenzioTraISaliciDiVen.pdf
+2024-06-16 00:55:34,561 - root - INFO - File caricato: SilenzioTraISaliciDiVen.pdf con ID: 666e1be6667f5cc21c40b2c3
+2024-06-16 00:55:34,562 - root - INFO - Numero di documenti generati: 3
+2024-06-16 00:55:34,565 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:55:35,764 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: SilenzioTraISaliciDiVen.pdf
+2024-06-16 00:55:35,764 - root - INFO - File caricato con ID: 666e1be6667f5cc21c40b2c3
+2024-06-16 00:55:35,765 - root - INFO - Ricevuto file: CodiciDiMirev.pdf
+2024-06-16 00:55:35,779 - root - INFO - File caricato: CodiciDiMirev.pdf con ID: 666e1be7667f5cc21c40b2c4
+2024-06-16 00:55:35,779 - root - INFO - Numero di documenti generati: 3
+2024-06-16 00:55:35,783 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:55:37,073 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: CodiciDiMirev.pdf
+2024-06-16 00:55:37,074 - root - INFO - File caricato con ID: 666e1be7667f5cc21c40b2c4
+2024-06-16 00:55:55,772 - root - INFO - Ricevuta domanda: Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?
+2024-06-16 00:55:55,775 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 00:55:55,776 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 00:55:55,781 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 00:56:02,023 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the given context, the principle of functionment of the Lanternes di Ferro is not explicitly stated. It is mentioned that "la sicurezza intrinseca del design di Tobin previene qualsiasi danno serio", suggesting that the lanterns have a built-in safety mechanism that prevents serious damage, but it does not reveal what this mechanism is or how it works.\n\nAs for who invented the Lanterne di Ferro, the context states that "Fexlor diventa famoso per le sue Lanterne di Ferro", implying that Fexlor is the one who created them.'}
+2024-06-16 00:56:02,024 - root - INFO - Risposta dal modello: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the given context, the principle of functionment of the Lanternes di Ferro is not explicitly stated. It is mentioned that "la sicurezza intrinseca del design di Tobin previene qualsiasi danno serio", suggesting that the lanterns have a built-in safety mechanism that prevents serious damage, but it does not reveal what this mechanism is or how it works.\n\nAs for who invented the Lanterne di Ferro, the context states that "Fexlor diventa famoso per le sue Lanterne di Ferro", implying that Fexlor is the one who created them.'}
+2024-06-16 01:15:21,813 - root - INFO - Ricevuto file: OceaniDiAndromalia.pdf
+2024-06-16 01:15:21,830 - root - INFO - File caricato: OceaniDiAndromalia.pdf con ID: 666e20892cacaa6bef1dd577
+2024-06-16 01:15:21,830 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:15:22,183 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-16 01:15:39,545 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: OceaniDiAndromalia.pdf
+2024-06-16 01:15:39,546 - root - INFO - File caricato con ID: 666e20892cacaa6bef1dd577
+2024-06-16 01:15:39,546 - root - INFO - Ricevuto file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 01:15:39,563 - root - INFO - File caricato: LeLanterneDiFerroDiFLexor.pdf con ID: 666e209b2cacaa6bef1dd578
+2024-06-16 01:15:39,564 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:15:39,570 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:15:40,883 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 01:15:40,883 - root - INFO - File caricato con ID: 666e209b2cacaa6bef1dd578
+2024-06-16 01:15:40,884 - root - INFO - Ricevuto file: UltimoBalloDiLorian.pdf
+2024-06-16 01:15:40,897 - root - INFO - File caricato: UltimoBalloDiLorian.pdf con ID: 666e209c2cacaa6bef1dd579
+2024-06-16 01:15:40,897 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:15:40,900 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:15:42,431 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: UltimoBalloDiLorian.pdf
+2024-06-16 01:15:42,431 - root - INFO - File caricato con ID: 666e209c2cacaa6bef1dd579
+2024-06-16 01:15:42,432 - root - INFO - Ricevuto file: SilenzioTraISaliciDiVen.pdf
+2024-06-16 01:15:42,446 - root - INFO - File caricato: SilenzioTraISaliciDiVen.pdf con ID: 666e209e2cacaa6bef1dd57a
+2024-06-16 01:15:42,446 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:15:42,449 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:15:43,684 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: SilenzioTraISaliciDiVen.pdf
+2024-06-16 01:15:43,684 - root - INFO - File caricato con ID: 666e209e2cacaa6bef1dd57a
+2024-06-16 01:15:43,684 - root - INFO - Ricevuto file: CodiciDiMirev.pdf
+2024-06-16 01:15:43,698 - root - INFO - File caricato: CodiciDiMirev.pdf con ID: 666e209f2cacaa6bef1dd57b
+2024-06-16 01:15:43,698 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:15:43,701 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:15:44,990 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: CodiciDiMirev.pdf
+2024-06-16 01:15:44,990 - root - INFO - File caricato con ID: 666e209f2cacaa6bef1dd57b
+2024-06-16 01:17:01,503 - root - INFO - Ricevuta domanda: Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?
+2024-06-16 01:17:01,508 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 01:17:01,508 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 01:17:01,516 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:17:04,839 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the context, Tobin is the one who invented the Lanterne di Ferro (Ferro Lanterns). The principle of their functioning is not specified in the provided text.'}
+2024-06-16 01:17:04,840 - root - INFO - Risposta dal modello: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the context, Tobin is the one who invented the Lanterne di Ferro (Ferro Lanterns). The principle of their functioning is not specified in the provided text.'}
+2024-06-16 01:17:20,287 - root - INFO - Ricevuta domanda: Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?
+2024-06-16 01:17:20,291 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 01:17:20,291 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 01:17:20,295 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:17:23,237 - root - INFO - Result: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': "I don't know. The context doesn't mention anything about Lorian Silvers or Ella Jordan, nor does it seem to be related to the stories provided."}
+2024-06-16 01:17:23,238 - root - INFO - Risposta dal modello: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': "I don't know. The context doesn't mention anything about Lorian Silvers or Ella Jordan, nor does it seem to be related to the stories provided."}
+2024-06-16 01:22:35,318 - root - INFO - Ricevuto file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 01:22:35,338 - root - INFO - File caricato: LeLanterneDiFerroDiFLexor.pdf con ID: 666e223b391f2a0b939f5fc8
+2024-06-16 01:22:35,338 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:22:35,681 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2024-06-16 01:22:46,816 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: LeLanterneDiFerroDiFLexor.pdf
+2024-06-16 01:22:46,816 - root - INFO - File caricato con ID: 666e223b391f2a0b939f5fc8
+2024-06-16 01:22:53,682 - root - INFO - Ricevuta domanda: Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?
+2024-06-16 01:22:53,686 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 01:22:53,686 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 01:22:53,692 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:22:54,309 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Number of requested results 4 is greater than number of elements in index 3, updating n_results = 3
+2024-06-16 01:22:58,572 - root - INFO - Result: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': "I don't know. There is no character named Lorian Silvers or Ella Jordan in the provided context, and it appears to be a story about Tobin Grail, Eliza Cromwell, Lord Blackwell, and the village of Fexlor in 1592. The question seems unrelated to the given context."}
+2024-06-16 01:22:58,572 - root - INFO - Risposta dal modello: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': "I don't know. There is no character named Lorian Silvers or Ella Jordan in the provided context, and it appears to be a story about Tobin Grail, Eliza Cromwell, Lord Blackwell, and the village of Fexlor in 1592. The question seems unrelated to the given context."}
+2024-06-16 01:23:11,486 - root - INFO - Ricevuta domanda: Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?
+2024-06-16 01:23:11,491 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 01:23:11,491 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 01:23:11,495 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:23:12,001 - chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Number of requested results 4 is greater than number of elements in index 3, updating n_results = 3
+2024-06-16 01:23:17,971 - root - INFO - Result: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the context, the principle of function of the Lanterns of Iron is not explicitly stated. It is mentioned that they "utilizzano una combinazione di chimica e ingegneria meccanica per produrre luce senza fiamma aperta", but it does not provide further details on how they work.\n\nAs for who invented them, according to the context, Tobin Grail, a 28-year-old inventor and mechanic, is credited with inventing the Lanterns of Iron.'}
+2024-06-16 01:23:17,971 - root - INFO - Risposta dal modello: {'query': 'Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?', 'result': 'According to the context, the principle of function of the Lanterns of Iron is not explicitly stated. It is mentioned that they "utilizzano una combinazione di chimica e ingegneria meccanica per produrre luce senza fiamma aperta", but it does not provide further details on how they work.\n\nAs for who invented them, according to the context, Tobin Grail, a 28-year-old inventor and mechanic, is credited with inventing the Lanterns of Iron.'}
+2024-06-16 01:26:56,380 - root - INFO - Ricevuto file: UltimoBalloDiLorian.pdf
+2024-06-16 01:26:56,396 - root - INFO - File caricato: UltimoBalloDiLorian.pdf con ID: 666e2340391f2a0b939f5fc9
+2024-06-16 01:26:56,397 - root - INFO - Numero di documenti generati: 3
+2024-06-16 01:26:56,400 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:26:58,303 - root - INFO - Embeddings creati e aggiunti al database vettoriale per il file: UltimoBalloDiLorian.pdf
+2024-06-16 01:26:58,303 - root - INFO - File caricato con ID: 666e2340391f2a0b939f5fc9
+2024-06-16 01:27:44,134 - root - INFO - Ricevuta domanda: Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?
+2024-06-16 01:27:44,138 - root - INFO - Modelli disponibili: [{'name': 'llama3:latest', 'model': 'llama3:latest', 'modified_at': '2024-06-14T21:56:46.2592756+02:00', 'size': 4661224676, 'digest': '365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8.0B', 'quantization_level': 'Q4_0'}}]
+2024-06-16 01:27:44,138 - root - INFO - Il modello 'llama3:latest' è disponibile.
+2024-06-16 01:27:44,141 - chromadb.api.segment - INFO - Collection langchain is not created.
+2024-06-16 01:27:48,028 - root - INFO - Result: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': 'According to the context, Lorian reveals to Ella that he was an agent secret during the war years, using his career as a ballerino as cover for risky missions.'}
+2024-06-16 01:27:48,029 - root - INFO - Risposta dal modello: {'query': 'Qual è il segreto che Lorian Silvers rivela a Ella Jordan durante il loro ultimo spettacolo insieme?', 'result': 'According to the context, Lorian reveals to Ella that he was an agent secret during the war years, using his career as a ballerino as cover for risky missions.'}

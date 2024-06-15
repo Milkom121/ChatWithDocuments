@@ -27,6 +27,9 @@ NB: in questo momento ci sono due branch sulla repo, "main" dove siamo rimasti a
 e "AutoEmbeddingOnUpload" dove al caricamento dei file su Mongo questi vengono anche sottoposti ad embeddings che viene eseguito 
 ma quando vai poi a porre una domanda all'llm (tipo quelle sulle Lanterne di Ferro) si vede che viene passato del contesto dal documento di riferimento (per esempio viene nominato Tobin Grail)
 ma è evidente che non sia il contesto corretto poichè non viene restituita la risposta giusta, quindi occorre potenziare il procedimento
+AGGIORNAMENTO delle 01:30 del 16/06/24: il problema sussite solo quando vengono passati più file insieme nella stessa POST. Diversamente funzionano bene, quindi mi vengono in mente due cose: 
+1- dal frontend mandare file singolarmente anche se ne vengono caricati di più (cosa che ha vantaggi e svantaggi)
+2- mandare comunuq epiù file insieme dal frontend ma poi elaborarli singolarmente
 
 
 
