@@ -23,6 +23,12 @@ API
 
 
 
+NB: in questo momento ci sono due branch sulla repo, "main" dove siamo rimasti al momento in cui si possono caricare i documenti su mongodb tramite API, 
+e "AutoEmbeddingOnUpload" dove al caricamento dei file su Mongo questi vengono anche sottoposti ad embeddings che viene eseguito 
+ma quando vai poi a porre una domanda all'llm (tipo quelle sulle Lanterne di Ferro) si vede che viene passato del contesto dal documento di riferimento (per esempio viene nominato Tobin Grail)
+ma è evidente che non sia il contesto corretto poichè non viene restituita la risposta giusta, quindi occorre potenziare il procedimento
+
+
 
 DOMANDE DI TEST:
 
