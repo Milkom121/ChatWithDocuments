@@ -6,9 +6,15 @@ from chatwithdocuments.db_manager import upload_pdf
 from chatwithdocuments.pdf_processing import extract_text_from_pdf
 import logging
 import os
+import traceback
 
-# Configura il logging
-logging.basicConfig(level=logging.INFO)
+# Configura il logging per scrivere su console e file
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    handlers=[
+                        logging.FileHandler("app.log"),
+                        logging.StreamHandler()
+                    ])
 
 # Modello di richiesta
 class Question(BaseModel):
@@ -55,7 +61,7 @@ async def upload_files(files: List[UploadFile] = File(...)):
         
         return {"file_ids": uploaded_file_ids}
     except Exception as e:
-        logging.error(f"Errore durante il caricamento dei file: {e}")
+        logging.error(f"Errore durante il caricamento dei file: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail="Errore durante il caricamento dei file.")
 
 # Configura CORS per permettere le richieste dal frontend

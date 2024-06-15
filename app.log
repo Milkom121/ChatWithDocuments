@@ -1,0 +1,82 @@
+2024-06-15 23:20:47,612 - root - INFO - Ricevuto file: OceaniDiAndromalia.pdf
+2024-06-15 23:20:47,631 - root - ERROR - Errore durante il caricamento dei file: Traceback (most recent call last):
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: "Gli Oceani di Andromalia\nData: 17 agosto 3075\nLuogo: Pianeta Andromalia\nPersonaggi Principali:\nElara Venn: Comandante di una nave spaziale, 34 anni, esploratrice coraggiosa e curiosa.\nDr. Liam Kres: Biologo marino, 40 anni, specializzato in xenobiologia.\nAI Nora: Intelligenza artificiale che gestisce la nave e assiste l'equipaggio.\nTrama:\nNel 3075, l'umanità ha raggiunto le stelle e ora esplora pianeti abitabili in galassie lontane. Il \nComandante Elara Venn guida una missione di esplorazione sul pianeta Andromalia, noto \nper essere coperto quasi interamente da oceani. Con lei c'è il Dr. Liam Kres, un biologo \nmarino, e Nora, un'intelligenza artificiale avanzata che pilota la nave.\nDurante la loro esplorazione subacquea, scoprono straordinarie forme di vita aliena, tra cui \nuna specie di pianta che sembra comunicare tramite impulsi luminosi. Dr. Kres ipotizza che \nqueste piante possano avere una forma di intelligenza collettiva, forse superiore a quella \ndegli esseri umani.\nLa scoperta si complica quando una delle piante emette un impulso che temporaneamente \ndisabilita Nora, costringendo Elara e Liam a fare affidamento sulle loro abilità di \nsopravvivenza senza il supporto tecnologico. Durante questo periodo, si sviluppa una \nrelazione più profonda tra Elara e Liam, mentre lavorano insieme per ripristinare Nora e \ncomprendere meglio la comunicazione delle piante.\nAlla fine, scoprono che gli impulsi delle piante non erano un attacco, ma un tentativo di \nstabilire un contatto. Utilizzando le registrazioni degli impulsi, Elara e Liam riescono a \ntradurre i segnali, apprendendo che le piante cercano di avvertirli di un'imminente \n1\ncatastrofe naturale che minaccia il loro ecosistema.\nCon questa nuova comprensione, l'equipaggio lavora per aiutare le piante a mitigare il \ndisastro. In cambio, le piante offrono conoscenze sulla loro biologia che potrebbero portare \na importanti scoperte mediche e tecnologiche per l'umanità.\nEpilogo:\nRitornati sulla Terra, Elara e Liam pubblicano le loro scoperte, che rivoluzionano la \ncomprensione umana della vita aliena e della comunicazione interspecie.\n2\n"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\api\main.py", line 55, in upload_files
+    file_id = upload_pdf(file.filename, pdf_text)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\chatwithdocuments\db_manager.py", line 26, in upload_pdf
+    on_file_uploaded(file_id, filename, content)
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\chatwithdocuments\callback_embedding_uploaded_pdf.py", line 13, in on_file_uploaded
+    documents = load_and_split_text(content)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\chatwithdocuments\data_loader.py", line 13, in load_and_split_text
+    return loader.load_and_split(text_splitter=text_splitter)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 63, in load_and_split
+    docs = self.load()
+           ^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 29, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading Gli Oceani di Andromalia
+Data: 17 agosto 3075
+Luogo: Pianeta Andromalia
+Personaggi Principali:
+Elara Venn: Comandante di una nave spaziale, 34 anni, esploratrice coraggiosa e curiosa.
+Dr. Liam Kres: Biologo marino, 40 anni, specializzato in xenobiologia.
+AI Nora: Intelligenza artificiale che gestisce la nave e assiste l'equipaggio.
+Trama:
+Nel 3075, l'umanità ha raggiunto le stelle e ora esplora pianeti abitabili in galassie lontane. Il 
+Comandante Elara Venn guida una missione di esplorazione sul pianeta Andromalia, noto 
+per essere coperto quasi interamente da oceani. Con lei c'è il Dr. Liam Kres, un biologo 
+marino, e Nora, un'intelligenza artificiale avanzata che pilota la nave.
+Durante la loro esplorazione subacquea, scoprono straordinarie forme di vita aliena, tra cui 
+una specie di pianta che sembra comunicare tramite impulsi luminosi. Dr. Kres ipotizza che 
+queste piante possano avere una forma di intelligenza collettiva, forse superiore a quella 
+degli esseri umani.
+La scoperta si complica quando una delle piante emette un impulso che temporaneamente 
+disabilita Nora, costringendo Elara e Liam a fare affidamento sulle loro abilità di 
+sopravvivenza senza il supporto tecnologico. Durante questo periodo, si sviluppa una 
+relazione più profonda tra Elara e Liam, mentre lavorano insieme per ripristinare Nora e 
+comprendere meglio la comunicazione delle piante.
+Alla fine, scoprono che gli impulsi delle piante non erano un attacco, ma un tentativo di 
+stabilire un contatto. Utilizzando le registrazioni degli impulsi, Elara e Liam riescono a 
+tradurre i segnali, apprendendo che le piante cercano di avvertirli di un'imminente 
+1
+catastrofe naturale che minaccia il loro ecosistema.
+Con questa nuova comprensione, l'equipaggio lavora per aiutare le piante a mitigare il 
+disastro. In cambio, le piante offrono conoscenze sulla loro biologia che potrebbero portare 
+a importanti scoperte mediche e tecnologiche per l'umanità.
+Epilogo:
+Ritornati sulla Terra, Elara e Liam pubblicano le loro scoperte, che rivoluzionano la 
+comprensione umana della vita aliena e della comunicazione interspecie.
+2
+
+
+2024-06-15 23:24:11,623 - root - INFO - Ricevuto file: OceaniDiAndromalia.pdf
+2024-06-15 23:24:11,643 - root - ERROR - Errore durante il caricamento dei file: Traceback (most recent call last):
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\api\main.py", line 55, in upload_files
+    file_id = upload_pdf(file.filename, pdf_text)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\chatwithdocuments\db_manager.py", line 26, in upload_pdf
+    on_file_uploaded(file_id, filename, content)
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\chatwithdocuments\callback_embedding_uploaded_pdf.py", line 16, in on_file_uploaded
+    db = Chroma.from_documents(documents, embedding=embeddings, persist_directory="emb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_community\vectorstores\chroma.py", line 788, in from_documents
+    texts = [doc.page_content for doc in documents]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matti\OneDrive\Documents\CORSI\LLM\REPO\ChatWithDocuments\venv\Lib\site-packages\langchain_community\vectorstores\chroma.py", line 788, in <listcomp>
+    texts = [doc.page_content for doc in documents]
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'page_content'
+

@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 import os
 from dotenv import load_dotenv
+from chatwithdocuments.callback_embedding_uploaded_pdf import on_file_uploaded
 
 load_dotenv()
 
@@ -19,7 +20,12 @@ def upload_pdf(filename, content):
         "content": content  # Salva il contenuto come testo
     }
     result = collection.insert_one(document)
-    return result.inserted_id
+    file_id = result.inserted_id
+    
+    # Chiamata al callback
+    on_file_uploaded(file_id, filename, content)
+    
+    return file_id
 
 def download_pdf(pdf_id):
     document = collection.find_one({"_id": ObjectId(pdf_id)})
