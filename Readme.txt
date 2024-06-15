@@ -16,3 +16,8 @@ sono presenti dei testi del tutto inventati nella cartella "manuals" così da po
 - per parsare i pdf in manuals e creare il DB "emb" raggiungere il file main.py e lanciarlo con: "python main.py"
 - lanciare poi prompt.py con: "python prompt.py"
 
+
+
+DOMANDE DI TEST:
+
+- "Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?"

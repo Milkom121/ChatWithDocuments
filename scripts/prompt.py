@@ -59,14 +59,13 @@
 #[FUNZIONANTE CON OLLAMA]
 
 # prompt.py
-# Importa la funzione per interrogare il modello LLM
 from chatwithdocuments.query_llm import query_model
 
 # Funzione principale che gestisce il processo di domande e risposte
 def main():
-    # Definisce la domanda da porre al modello
-    question = "\n\nQual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?"
-
+    # Chiede all'utente di inserire la domanda
+    question = input("Inserisci la tua domanda: ")
+    
     # Interroga il modello con la domanda specifica
     result = query_model(question)
     
