@@ -12,4 +12,7 @@ sono presenti dei testi del tutto inventati nella cartella "manuals" così da po
 - attivare il venv con ".\venv\Scripts\activate"
 - upgradare pip con: "python.exe -m pip install --upgrade pip"
 - installare dipendenze con: "pip -r install requirements.txt"
-- raggiungere il file main.py e lanciarlo con: "python main.py"
+- posizionarsi a livello del file setup.py e lanciare "pip install -e ."
+- per parsare i pdf in manuals e creare il DB "emb" raggiungere il file main.py e lanciarlo con: "python main.py"
+- lanciare poi prompt.py con: "python prompt.py"
+
