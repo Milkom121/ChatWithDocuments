@@ -9,12 +9,18 @@ sono presenti dei testi del tutto inventati nella cartella "manuals" così da po
 - da CMD: "ollama pull llama3:latest" (oppure solo llama3, non ricordo)
 - avviare Ollama
 - creare venv nella cartella principale della repo con "python -m venv venv"
-- attivare il venv con ".\venv\Scripts\activate" su Win mentre "source venv/bin/activate"  su macOS o Linux
-- upgradare pip con: "python.exe -m pip install --upgrade pip"
-- installare dipendenze con: "pip -r install requirements.txt"
-- posizionarsi a livello del file setup.py e lanciare "pip install -e ."
-- per parsare i pdf in manuals e creare il DB "emb" raggiungere il file main.py e lanciarlo con: "python main.py"
-- lanciare poi prompt.py con: "python prompt.py"
+- attivare il venv su Win con: .\venv\Scripts\activate  || su macOS o Linux: source venv/bin/activate  
+- upgradare pip con: python.exe -m pip install --upgrade pip
+- installare dipendenze con: pip -r install requirements.txt
+- posizionarsi a livello del file setup.py e lanciare: pip install -e .
+- per parsare i pdf in manuals e creare il DB "emb" raggiungere il file main.py e lanciarlo con: python main.py
+- lanciare poi prompt.py con: python prompt.py
+
+API
+- lanciare da terminale: python api/main.py
+- lanciare da terminale (o roba tipo Postman o quello che si vuole): curl -X POST "http://127.0.0.1:8000/ask" -H "Content-Type: application/json" -d "{\"question\":\"Qual è il principio di funzionamento delle Lanterne di Ferro e chi le ha inventate?\"}"
+
+
 
 
 
